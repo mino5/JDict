@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <utils.other.ExTextView
+        android:id="@+id/detailSectionHeader"
+        android:layout_height="fill_parent"
+        android:background="@color/gray"
+        android:paddingLeft="10dp"
+        android:text="COMPOUNDS"
+        android:layout_width="fill_parent"
+        android:textColor="@color/text_section"
+        android:textSize="22sp"
+        android:layout_gravity="center_vertical" />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="1"
+
+        android:layout_weight="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp">
+
+        <utils.other.ExTextView
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.45"
+            android:textColor="@color/gray_match"
+            android:textSize="22sp"
+            android:layout_gravity="center_vertical"
+            android:visibility="invisible" />
+
+
+        <utils.other.ExTextView
+            android:id="@+id/buttonAll"
+            android:layout_width="0dp"
+            android:textAlignment="center"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1375"
+            android:background="@color/graydark"
+            android:textSize="20sp"
+            android:text="ALL"
+            android:textColor="@color/gray_foreground"
+            android:gravity="center"
+            android:layout_gravity="center_vertical" />
+
+        <utils.other.ExTextView
+            android:id="@+id/buttonRight"
+            android:layout_width="0dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_section"
+            android:background="@color/transparent"
+            android:layout_weight="0.1375"
+            android:textSize="20sp"
+            android:text="_"
+            android:gravity="center"
+            android:layout_gravity="center_vertical" />
+
+        <utils.other.ExTextView
+            android:id="@+id/buttonLeft"
+            android:layout_width="0dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1375"
+            android:textSize="20sp"
+            android:textColor="@color/text_section"
+            android:background="@color/transparent"
+            android:text="_"
+            android:gravity="center"
+            android:layout_gravity="center_vertical" />
+
+        <utils.other.ExTextView
+            android:id="@+id/buttonBoth"
+            android:layout_width="0dp"
+            android:textAlignment="center"
+            android:textColor="@color/text_section"
+            android:background="@color/transparent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1375"
+            android:textSize="20sp"
+            android:text="_"
+            android:gravity="center"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

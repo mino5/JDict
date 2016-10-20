@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0.96"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/pencil"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="5dp"
+
+            android:contentDescription="pencil"
+            android:src="@drawable/pencil" />
+
+        <utils.other.ExTextView
+            android:id="@+id/itemTypeTextClickable"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="5dp"
+            android:background="@android:color/transparent"
+            android:gravity="top"
+            android:text="noun"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_weight="0.04"
+        android:id="@+id/showArrow"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginRight="6dp"
+        android:gravity="center_vertical|right"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="2dp"
+        android:visibility="visible"
+        android:src="@drawable/go_sign" />
+
+</LinearLayout>

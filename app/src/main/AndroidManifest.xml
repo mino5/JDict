@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mino.jdict"
+    android:installLocation="auto"
+    android:versionCode="34">
+    <meta-data
+        android:name="android.app.searchable"
+        android:resource="@xml/searchable" />
+
+    <supports-screens android:resizeable="true"
+    android:smallScreens="true"
+    android:normalScreens="true"
+    android:largeScreens="true"
+    android:xlargeScreens="true"
+    android:anyDensity="true">
+</supports-screens>
+
+    <application
+        android:name="com.mino.jdict.JDictApplication"
+        android:allowBackup="true"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+        android:label="JDict"
+        android:icon="@mipmap/ic_launcher"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="com.mino.jdict.activities.DownloaderActivity"
+            android:theme="@style/splashScreenTheme"
+            android:launchMode="standard">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="com.mino.jdict.activities.MainActivity"
+            android:launchMode="singleTop">
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.mino.jdict.activities.ExtractActivity"
+            android:launchMode="singleTop">
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="com.mino.jdict.activities.ItemDetailsActivity"
+            android:label="Word"
+            android:launchMode="standard"></activity>
+
+        <activity
+            android:name="com.mino.jdict.activities.ExampleActivity"
+            android:label="Examples"
+            android:launchMode="singleTop">
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name="com.mino.jdict.activities.KanjiByComponentActivity"
+            android:label="Kanji by component"
+            android:launchMode="singleTop">
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name="com.mino.jdict.activities.KanjiActivity"
+            android:label="Kanji"
+            android:launchMode="singleTop">
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name="com.mino.jdict.activities.KanjiDetailsActivity"
+            android:label="Kanji"
+            android:launchMode="standard"></activity>
+
+        <activity
+            android:name="com.mino.jdict.activities.KanjiComponentDetailsActivity"
+            android:label="Component"
+            android:launchMode="standard"></activity>
+
+        <activity
+            android:name="com.mino.jdict.activities.StrokeOrderActivity"
+            android:label="Stroke order"
+            android:launchMode="singleTop"></activity>
+
+        <activity
+            android:name="com.mino.jdict.activities.AddNoteActivity"
+            android:label="Notepad"
+            android:launchMode="singleTop"></activity>
+
+        <activity
+            android:name="com.mino.jdict.activities.NoteActivity"
+            android:label="Notes"
+            android:launchMode="singleTop"></activity>
+
+        <activity
+            android:name="com.mino.jdict.activities.SchoolGradesActivity"
+            android:label="School Grades"
+            android:launchMode="singleTop"></activity>
+
+        <activity
+            android:name="com.mino.jdict.activities.JLPTActivity"
+            android:label="JLPT"
+            android:launchMode="singleTop"></activity>
+
+        <activity
+            android:name="com.mino.jdict.activities.VocabularyActivity"
+            android:label="My vocabulary"
+            android:launchMode="singleTop"></activity>
+
+        <activity
+            android:name="com.mino.jdict.activities.AboutActivity"
+            android:label="About"
+            android:launchMode="singleTop"></activity>
+
+        <activity
+            android:name="com.mino.jdict.activities.SettingsActivity"
+            android:label="Settings"
+            android:launchMode="singleTop"></activity>
+
+        <activity
+            android:name="com.mino.jdict.activities.ExampleDetailsActivity"
+            android:label="Example"
+            android:launchMode="standard"></activity>
+
+        <receiver android:name="com.mino.jdict.MyReceiver"/>
+        <service android:name="com.mino.jdict.MyDownloaderService"/>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- Required to access Google Play Licensing -->
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE" />
+    <!-- Required to keep CPU alive while downloading files (NOT to keep screen awake) -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- Required to poll the state of the network connection
+    and respond to changes -->
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Required to check whether Wi-Fi is enabled -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+
+</manifest>

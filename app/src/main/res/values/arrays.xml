@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="kanji_search_options_array">
+        <item>All Kanji</item>
+        <item>Frequent Kanji</item>
+        <item>All JLPT</item>
+        <item>JLPT N5</item>
+        <item>JLPT N4</item>
+        <item>JLPT N3</item>
+        <item>JLPT N2</item>
+        <item>JLPT N1</item>
+        <item>School</item>
+        <item>Grade 1</item>
+        <item>Grade 2</item>
+        <item>Grade 3</item>
+        <item>Grade 4</item>
+        <item>Grade 5</item>
+        <item>Grade 6</item>
+        <item>Junior High</item>
+    </string-array>
+
+    <string-array name="vocabulary_search_options_array">
+        <item>All Vocabulary</item>
+        <item>Verbs</item>
+        <item>Non suru verbs</item>
+        <item>Nouns</item>
+        <item>Adjectives</item>
+        <item>Adverbs</item>
+        <item>Expressions</item>
+        <item>Counters</item>
+        <item>Onomatopeia or mimetic words</item>
+    </string-array>
+
+    <string-array name="GradeItems">
+        <item>1st Grade</item>
+        <item>2nd Grade</item>
+        <item>3rd Grade</item>
+        <item>4th Grade</item>
+        <item>5th Grade</item>
+        <item>6th Grade</item>
+        <item>Junior highschool</item>
+    </string-array>
+
+    <string-array name="GradeActionBarHeaders">
+        <item>1st Grade</item>
+        <item>2nd Grade</item>
+        <item>3rd Grade</item>
+        <item>4th Grade</item>
+        <item>5th Grade</item>
+        <item>6th Grade</item>
+        <item>Junior highschool</item>
+    </string-array>
+
+
+    <string-array name="GradeDescriptions">
+        <item>6 years old</item>
+        <item>7 years old</item>
+        <item>8 years old</item>
+        <item>9 years old</item>
+        <item>10 years old</item>
+        <item>11 years old</item>
+        <item>12 to 15 years old</item>
+    </string-array>
+
+    <string-array name="GradeCounts">
+        <item>80</item>
+        <item>160</item>
+        <item>200</item>
+        <item>200</item>
+        <item>185</item>
+        <item>181</item>
+        <item>1130</item>
+    </string-array>
+
+    <string-array name="GradeIconTexts">
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+        <item>＋</item>
+    </string-array>
+
+    <string-array name="JLPTActionBarHeaders">
+        <item>JLPT N5</item>
+        <item>JLPT N4</item>
+        <item>JLPT N3</item>
+        <item>JLPT N2</item>
+        <item>JLPT N1</item>
+    </string-array>
+
+    <string-array name="JLPTItems">
+        <item>Level N5</item>
+        <item>Level N4</item>
+        <item>Level N3</item>
+        <item>Level N2</item>
+        <item>Level N1</item>
+    </string-array>
+
+    <string-array name="JLPTDescriptions">
+        <item>Beginner</item>
+        <item>Basic</item>
+        <item>Lower intermediate</item>
+        <item>Intermediate</item>
+        <item>Advanced</item>
+    </string-array>
+
+    <string-array name="JLPTCounts">
+        <item>79</item>
+        <item>166</item>
+        <item>367</item>
+        <item>367</item>
+        <item>1232</item>
+    </string-array>
+
+    <string-array name="JLPTIconTexts">
+        <item>五</item>
+        <item>四</item>
+        <item>三</item>
+        <item>二</item>
+        <item>一</item>
+    </string-array>
+</resources>

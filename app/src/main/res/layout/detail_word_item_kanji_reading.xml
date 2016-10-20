@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <utils.other.ExTextView
+        android:id="@+id/readingKanji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="0dp"
+
+        android:layout_marginRight="0dp"
+        android:layout_weight="1"
+
+        android:scrollHorizontally="true"
+        android:text="まつりごと"
+        android:textColor="@color/graydark"
+        android:textSize="14sp" />
+
+    <utils.other.ExTextView
+        android:id="@+id/kanji"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+
+        android:layout_below="@id/readingKanji"
+        android:layout_gravity="center_horizontal"
+
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+
+        android:text="政"
+        android:textSize="30sp" />
+
+    <utils.other.ExTextView
+
+        android:id="@+id/readingKanjiRomaji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+
+        android:layout_weight="1"
+        android:scrollHorizontally="true"
+        android:text="matsurigoto"
+        android:textColor="@color/graydark"
+        android:textSize="14sp" />
+
+</LinearLayout>

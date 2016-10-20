@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:padding="6dip">
+    <!-- Item Name -->
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+    <!-- Price Tag -->
+
+    <!-- Actual Price Data -->
+
+    <!-- Description Tag -->
+    <utils.other.ExTextView
+        android:id="@+id/moreResults"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/linear"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:singleLine="true"
+        android:text="Get More Results..."
+        android:textSize="22sp" />
+    <!-- This is the actual description -->
+</RelativeLayout>

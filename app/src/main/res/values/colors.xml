@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="imired">#990000</color>
+    <color name="gray">#f2f2f2</color>
+    <color name="commongreen">#FF007100</color>
+    <color name="commonblue">#1A7575</color>
+    <color name="graydark">#636969</color>
+    <color name="graydark2">#818185</color>
+    <color name="white">#F6F6F6</color>
+    <color name="white_background">#f4f4f4</color>
+    <color name="pure_white">#FFFFFF</color>
+    <color name="blue_background">#5AC2E9</color>
+    <color name="transparent">#00000000</color>
+    <color name="dark_selected">#101416</color>
+    <color name="dark">#3A3C42</color>
+    <color name="orange">#E67300</color>
+    <color name="gray_match">#666666</color>
+    <color name="gray_match_light">#999999</color>
+    <color name="blue_match">#004D99</color>
+    <color name="imired_light">#C50000</color>
+    <color name="gray2">#C2C2C2</color>
+    <color name="background_green">#BBCB6F</color>
+    <color name="text_green">#62740F</color>
+    <color name="gray_background">#20282c</color>
+    <color name="gray_background_light">#2c373d</color>
+    <color name="gray_foreground">#D5D5D7</color>
+    <color name="background_headers">#375151</color>
+    <color name="background_headers2">#A3C8C8</color>
+    <color name="foreground_headers">#F9811D</color>
+    <color name="foreground_headers2">#505050</color>
+    <color name="options_background">#aaaaaa</color>
+    <color name="options_buttons_background">#a6a6a6</color>
+    <color name="wordending">#636969</color>
+    <color name="text_section">#536b6b</color>
+</resources>

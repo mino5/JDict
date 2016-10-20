@@ -1,0 +1,1 @@
+update Entry set IsCommon = 1 where ent_seq = 2020680

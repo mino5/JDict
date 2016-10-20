@@ -1,0 +1,1 @@
+update entry set JLPT_level = 5, IsCommon = 1 where ent_seq = 1188770

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0.96"
+        android:orientation="horizontal">
+
+        <utils.other.ExTextView
+            android:id="@+id/note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:padding="6dip"
+            android:scrollHorizontally="true"
+            android:text="@string/addnote"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_weight="0.04"
+        android:id="@+id/showArrowNote"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_marginRight="6dp"
+        android:gravity="center_vertical|right"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="2dp"
+        android:visibility="visible"
+        android:src="@drawable/go_sign" />
+
+
+</LinearLayout>

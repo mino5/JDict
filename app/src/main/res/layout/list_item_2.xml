@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.96"
+        android:orientation="vertical"
+        android:padding="6dip">
+        <!-- Item Name -->
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <utils.other.ExTextView
+                android:id="@+id/item2upleft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:scrollHorizontally="true"
+                android:text="fdasfasdfasdfafasffasdfasd"
+                android:textSize="20sp" />
+
+            <utils.other.ExTextView
+                android:id="@+id/item2upright"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dip"
+                android:layout_marginTop="1dip"
+                android:layout_weight="2"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:scrollHorizontally="true"
+                android:text="textview2dsadasds"
+                android:textColor="#C50000"
+                android:textSize="13sp" />
+
+
+        </LinearLayout>
+        <!-- Price Tag -->
+
+        <!-- Actual Price Data -->
+
+        <!-- Description Tag -->
+        <utils.other.ExTextView
+            android:id="@+id/item2btm"
+            android:layout_width="fill_parent"
+
+            android:layout_height="wrap_content"
+
+            android:lines="1"
+            android:singleLine="true"
+            android:text="test"
+            android:textSize="17sp" />
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_weight="0.04"
+        android:id="@+id/showArrow"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginRight="6dp"
+        android:gravity="center_vertical|right"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="2dp"
+        android:visibility="gone"
+        android:src="@drawable/go_sign" />
+
+
+</LinearLayout><!-- This is the actual description -->

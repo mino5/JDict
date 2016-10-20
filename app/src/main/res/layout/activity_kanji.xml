@@ -1,0 +1,138 @@
+<!-- As the main content view, the view below consumes the entire
+     space available using match_parent in both dimensions. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical"
+
+    >
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white_background">
+
+
+
+        <ListView
+            android:id="@+id/listKanji"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <utils.other.ExTextView
+            android:id="@+id/listHeader"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:background="@color/background_headers"
+            android:paddingLeft="5dp"
+            android:text="@string/search_options_string"
+            android:textColor="@color/foreground_headers"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center_vertical" />
+
+        <RelativeLayout
+            android:id="@+id/searchOptionsLayoutKanji"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/search_settings_size"
+            android:background="@color/options_background"
+            android:clickable="true"
+            android:visibility="invisible">
+
+
+            <LinearLayout
+                android:id="@+id/OKCancelButtons"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:gravity="bottom"
+                android:layout_alignParentBottom="true">
+
+                <Button
+                    android:id="@+id/OKbuttonKanji"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="0.5"
+                    android:alpha="255"
+                    android:clickable="true"
+                    android:enabled="true"
+                    android:text="OK" />
+
+                <Button
+                    android:id="@+id/CancelButtonKanji"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="bottom"
+                    android:layout_toEndOf="@+id/OKbuttonKanji"
+                    android:layout_toRightOf="@+id/OKbuttonKanji"
+                    android:layout_weight="0.5"
+                    android:clickable="true"
+                    android:enabled="true"
+                    android:text="Cancel" />
+
+            </LinearLayout>
+
+
+
+            <CheckBox
+                android:id="@+id/checkBoxKanaAsRomaji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView"
+                android:layout_gravity="right"
+                android:button="@drawable/btn_check"
+                android:text="Kana as romaji"
+                android:visibility="gone"
+                android:textSize="20sp" />
+
+
+            <utils.other.ExTextView
+                android:id="@+id/textView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+
+                android:background="@android:color/transparent"
+                android:paddingLeft="5dp"
+                android:text="@string/search_options_string"
+                android:textColor="@color/background_headers"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="2dp" />
+
+            <Spinner
+                android:id="@+id/kanji_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:clickable="true"
+                android:entries="@array/kanji_search_options_array"
+                android:spinnerMode="dialog"
+                android:textSize="20sp"
+                android:layout_above="@+id/OKCancelButtons"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>
+

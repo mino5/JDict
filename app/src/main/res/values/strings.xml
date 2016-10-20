@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">JDict</string>
+    <string name="title_section1">Vocabulary</string>
+    <string name="title_section2">Kanji</string>
+    <string name="title_section3">Examples</string>
+    <string name="title_section4">Kanji by components</string>
+    <string name="title_section5">JLPT</string>
+    <string name="title_section6">School grades</string>
+    <string name="title_section7">Notes</string>
+    <string name="title_section8">My vocabulary</string>
+    <string name="title_section9">About</string>
+    <string name="title_section10">Extract</string>
+    <string name="title_section11">Settings</string>
+    <string name="analyze">Analyze</string>
+    <string name="settings">Settings</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="kana_as_romaji">Kana as romaji</string>
+    <string name="kana_as_romaji_detail">Display kana as romaji at all relevant places</string>
+    <string name="action_example">Example action</string>
+    <string name="action_settings">Settings</string>
+    <string name="loadingdatabase">Loading database...</string>
+    <string name="save_search_settings">Save search settings</string>
+    <string name="save_search_settings_detail">Search settings will always be saved between all of the search instances</string>
+    <string name="search_hint">Search all</string>
+    <string name="search_hint_kanji">Search kanji</string>
+    <string name="search_hint_examples">Search examples</string>
+    <string name="search_hint_kanji_by_components">Search by components</string>
+    <string name="search_hint_extract">Search by sentence</string>
+    <string name="recent_words">Recent words</string>
+    <string name="recent_examples">Recent examples</string>
+    <string name="loadingadddata">Loading additional data...</string>
+    <string name="crash_toast">Crash toast</string>
+    <string name="search_options_string">Search Options</string>
+    <string name="meaning_section">MEANING</string>
+    <string name="conjugation_section">CONJUGATION</string>
+    <string name="kanji_decomp_section">KANJI DECOMPOSITION</string>
+    <string name="alternatives">ALTERNATIVES</string>
+    <string name="reading_section">READING</string>
+    <string name="misc_section">MISCELLANEOUS</string>
+    <string name="kanji_components">COMPONENTS</string>
+    <string name="component_kanjis">KANJI WITH COMPONENT</string>
+    <string name="examples">EXAMPLES</string>
+    <string name="compounds">COMPOUNDS</string>
+    <string name="character_sets_section">CHARACTER SETS</string>
+    <string name="note_section">PERSONAL NOTES</string>
+    <string name="example_words">EXAMPLE WORDS</string>
+    <string name="example">EXAMPLE</string>
+    <string name="cert_examples">certified</string>
+    <string name="non_cert_examples">non-certified</string>
+    <string name="exact_words">exact</string>
+    <string name="additional_words">additional</string>
+    <string name="nanori">nanori</string>
+    <string name="kanji">kanji</string>
+    <string name="kunyomi">KUN reading</string>
+    <string name="onyomi">ON reading</string>
+    <string name="meaning">meaning</string>
+    <string name="reading">reading</string>
+    <string name="recent_kanji">Recent kanji</string>
+    <string name="recent_notes">Recent notes</string>
+    <string name="addnote">Add a note</string>
+    <string name="notepad">Notepad</string>
+    <string name="notes">Notes</string>
+    <string name="done">DONE</string>
+    <string name="edit">EDIT</string>
+    <string name="create">Create</string>
+    <string name="create_new_list">Create new list</string>
+    <string name="sublists">Sublists</string>
+    <string name="delete_list">Delete list</string>
+    <string name="delete_entry">Delete entry</string>
+    <string name="set_deleted">Set deleted</string>
+    <string name="entry_deleted">Entry deleted</string>
+    <string name="OK">OK</string>
+    <string name="Cancel">Cancel</string>
+    <string name="with">with</string>
+    <string name="enter_list_name">Enter list name:</string>
+    <string name="vocab_lists">Vocabulary lists</string>
+    <string name="lists">Lists</string>
+    <string name="entries_vocab">Entries</string>
+    <string name="kanji_vocab">Kanji</string>
+    <string name="examples_vocab">Examples</string>
+    <string name="fav_overflow">fav_overflow</string>
+    <string name="entry_added">Added to folder</string>\
+    <string name="example_header">Example</string>
+    <string name="kanji_header">Kanji</string>
+    <string name="word_header">Word</string>
+    <string name="no_folders">There are no vocabulary folders defined</string>
+    <string name="additional_section">ADDITIONAL INFO</string>
+    <string name="xref">see also: </string>
+    <string name="ant">opposite of: </string>
+    <string name="stag">only applies to: </string>
+    <string name="vocabulary">vocabulary</string>
+    <string name="from">From</string>
+    <string name="eng">English</string>
+    <string name="dut">Dutch</string>
+    <string name="por">Portuguese</string>
+    <string name="kor">Korean</string>
+    <string name="chi">Chinese</string>
+    <string name="ger">German</string>
+    <string name="fre">French</string>
+    <string name="lat">Latin</string>
+    <string name="ita">Italian</string>
+    <string name="rus">Russian</string>
+    <string name="spa">Spanish</string>
+    <string name="grc">Greek</string>
+    <string name="ara">Arabian</string>
+    <string name="haw">Hawaiian</string>
+    <string name="gre">Greek</string>
+    <string name="epo">Esperanto</string>
+    <string name="swe">Swedish</string>
+    <string name="ind">Indonesian</string>
+    <string name="est">Estonian</string>
+    <string name="mon">Mongolian</string>
+    <string name="may">Malay</string>
+    <string name="hin">Hindi</string>
+    <string name="dan">Danish</string>
+    <string name="nor">Norwegian</string>
+    <string name="urd">Urdu</string>
+    <string name="vie">Vietnamese</string>
+    <string name="hun">Hungarian</string>
+    <string name="pol">Polish</string>
+    <string name="per">Persian</string>
+    <string name="tha">Thai</string>
+    <string name="ain">Ainu</string>
+    <string name="san">Sanskrit</string>
+    <string name="khm">Central Khmer</string>
+    <string name="tib">Tibetian</string>
+    <string name="heb">Hebrew</string>
+    <string name="tah">Tahitian</string>
+    <string name="tur">Turkish</string>
+    <string name="alg">Algonquian</string>
+    <string name="bur">Burmese</string>
+    <string name="fin">Finnish</string>
+    <string name="bnt">Bantu</string>
+    <string name="fil">Filipino</string>
+    <string name="afr">Afrikaans</string>
+    <string name="som">Somali</string>
+    <string name="mnc">Manchu</string>
+    <string name="ota">Turkish, Ottoman (1500-1928)</string>
+    <string name="bre">Breton</string>
+    <string name="searchForMore">Search for more</string>
+    <string name="search">Search</string>
+    <string name="browse">Browse</string>
+    <string name="crash_toast_text">JDict Crash</string>
+    <string name="others">Other</string>
+    <string name="copying">Copying database</string>
+    <string name="analyzing">Analyzing...</string>
+	
+	    <!-- When a download completes, a notification is displayed, and this
+        string is used to indicate that the download successfully completed.
+        Note that such a download could have been initiated by a variety of
+        applications, including (but not limited to) the browser, an email
+        application, a content marketplace. -->
+    <string name="notification_download_complete">Download complete</string>
+
+    <!-- When a download completes, a notification is displayed, and this
+        string is used to indicate that the download failed.
+        Note that such a download could have been initiated by a variety of
+        applications, including (but not limited to) the browser, an email
+        application, a content marketplace. -->
+    <string name="notification_download_failed">Download unsuccessful</string>
+
+
+    <string name="state_unknown">Starting..."</string>
+    <string name="state_idle">Waiting for download to start</string>
+    <string name="state_fetching_url">Looking for resources to download</string>
+    <string name="state_connecting">Connecting to the download server</string>
+    <string name="state_downloading">Downloading resources</string>
+    <string name="state_completed">Download finished</string>
+    <string name="state_paused_network_unavailable">Download paused because no network is available</string>
+    <string name="state_paused_network_setup_failure">Download paused. Test a website in browser</string>
+    <string name="state_paused_by_request">Download paused</string>
+    <string name="state_paused_wifi_unavailable">Download paused because wifi is unavailable</string>
+    <string name="state_paused_wifi_disabled">Download paused because wifi is disabled</string>
+    <string name="state_paused_roaming">Download paused because you are roaming</string>
+    <string name="state_paused_sdcard_unavailable">Download paused because the external storage is unavailable</string>
+    <string name="state_failed_unlicensed">Download failed because you may not have purchased this app</string>
+    <string name="state_failed_fetching_url">Download failed because the resources could not be found</string>
+    <string name="state_failed_sdcard_full">Download failed because the external storage is full</string>
+    <string name="state_failed_cancelled">Download cancelled</string>
+    <string name="state_failed">Download failed</string>
+    <string name="text_paused_cellular">Would you like to enable downloading over cellular connections? Depending on your data plan, this may cost you money.</string>
+    <string name="text_paused_cellular_2">If you choose not to enable downloading over cellular connections, the download will automatically resume when wi-fi is available.</string>
+    <string name="text_button_resume_cellular">Resume download</string>
+    <string name="text_button_wifi_settings">Wi-Fi settings</string>
+    <string name="text_verifying_download">Verifying Download</string>
+    <string name="text_validation_complete">XAPK File Validation Complete.  Select OK to exit.</string>
+    <string name="text_validation_failed">XAPK File Validation Failed.</string>
+    <string name="text_button_pause">Pause Download</string>
+    <string name="text_button_resume">Resume Download</string>
+    <string name="text_button_cancel">Cancel</string>
+    <string name="text_button_cancel_verify">Cancel Verification</string>
+
+
+    <string name="kilobytes_per_second">%1$s KB/s</string>
+    <string name="time_remaining">Time remaining: %1$s</string>
+    <string name="time_remaining_notification">%1$s left</string>
+</resources>

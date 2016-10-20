@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:clickable="false"
+    android:orientation="horizontal">
+
+    <utils.other.ExTextView
+        android:id="@+id/kanji1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:layout_weight="0.2"
+        android:textAlignment="center"
+        android:background="@drawable/background_states"
+        android:text=""
+        android:textSize="44sp" />
+
+    <utils.other.ExTextView
+        android:id="@+id/kanji2"
+        android:layout_width="0dp"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_weight="0.2"
+        android:visibility="gone"
+        android:clickable="true"
+        android:layout_toEndOf="@+id/kanji1"
+        android:layout_toRightOf="@+id/kanji1"
+        android:background="@drawable/background_states"
+        android:text=""
+        android:textSize="44sp" />
+
+    <utils.other.ExTextView
+        android:id="@+id/kanji3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        android:clickable="true"
+        android:layout_weight="0.2"
+        android:gravity="center_horizontal"
+        android:layout_toEndOf="@+id/kanji2"
+        android:layout_toRightOf="@+id/kanji2"
+        android:background="@drawable/background_states"
+        android:text=""
+        android:textSize="44sp" />
+
+    <utils.other.ExTextView
+        android:id="@+id/kanji4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/kanji3"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        android:clickable="true"
+        android:layout_weight="0.2"
+        android:layout_toEndOf="@+id/kanji3"
+        android:layout_toRightOf="@+id/kanji3"
+        android:background="@drawable/background_states"
+        android:text=""
+        android:textSize="44sp" />
+
+    <utils.other.ExTextView
+        android:id="@+id/kanji5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:layout_weight="0.2"
+        android:clickable="true"
+        android:layout_toEndOf="@+id/kanji4"
+        android:layout_toRightOf="@+id/kanji4"
+        android:background="@drawable/background_states"
+        android:text=""
+        android:textSize="44sp" />
+
+</LinearLayout>

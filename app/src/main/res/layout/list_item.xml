@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dip">
+    <!-- Item Name -->
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <utils.other.ExTextView
+            android:id="@+id/toptext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:text="fdasfasdfasdfafasffasdfasd"
+            android:textSize="20sp" />
+
+        <utils.other.ExTextView
+            android:id="@+id/toptextadd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="1dip"
+            android:layout_weight="2"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:text="textview2"
+            android:textColor="#C50000"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+    <!-- Price Tag -->
+
+    <!-- Actual Price Data -->
+
+    <!-- Description Tag -->
+    <utils.other.ExTextView
+        android:id="@+id/bottomtext"
+        android:layout_width="fill_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/linear"
+        android:lines="1"
+        android:singleLine="true"
+        android:text="test"
+        android:textSize="17sp" />
+
+
+    <LinearLayout
+        android:id="@+id/linearAdd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bottomtext"
+        android:layout_marginTop="2dip"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <utils.other.ExTextView
+            android:id="@+id/certifiedWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:text="Certified, "
+            android:textColor="#48761A"
+            android:textSize="13sp"
+
+            android:textStyle="bold|italic"
+            android:visibility="visible" />
+
+        <utils.other.ExTextView
+            android:id="@+id/commonWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:text="Common word, "
+            android:textColor="#1A7575"
+            android:textSize="13sp"
+            android:textStyle="bold|italic" />
+
+        <utils.other.ExTextView
+            android:id="@+id/additionalInfos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginRight="1dip"
+            android:layout_weight="0.12"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:text="Noun, Conjugated, JLPT N1"
+            android:textColor="#444444"
+            android:textSize="13sp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="top"
+        android:id="@+id/separatorTextView"
+        android:gravity="top"
+        android:paddingLeft="0dp"
+        android:textColor="#62740F"
+        android:layout_alignBottom="@id/linearAdd"
+        android:paddingTop="0dp"
+        android:layout_marginTop="0dp"
+        android:src="@android:drawable/divider_horizontal_bright"
+        android:visibility="gone"
+        android:background="@android:drawable/divider_horizontal_bright" />
+</LinearLayout>
+    <!-- This is the actual description -->

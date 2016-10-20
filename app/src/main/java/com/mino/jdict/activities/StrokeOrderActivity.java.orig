@@ -1,0 +1,195 @@
+package com.example.mino.jdict.activities;
+
+import android.content.Context;
+import android.graphics.Color;
+import android.graphics.Picture;
+import android.graphics.drawable.AnimationDrawable;
+import android.graphics.drawable.PictureDrawable;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.FrameLayout;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
+
+import com.caverock.androidsvg.SVG;
+import com.caverock.androidsvg.SVGParseException;
+import com.example.mino.jdict.R;
+import com.larvalabs.svgandroid.SVGBuilder;
+
+import java.util.ArrayList;
+
+import utils.other.FlowLayout;
+import utils.other.StaticObjectContainer;
+
+//import com.larvalabs.svgandroid.SVG;
+//import com.larvalabs.svgandroid.SVGParser;
+
+/**
+ * Created by Mino on 2014-10-07.
+ */
+public class StrokeOrderActivity extends BaseActivity {
+
+    String strokeSvg = "";
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        LayoutInflater inflater = (LayoutInflater) this
+                .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View contentView = inflater.inflate(R.layout.activity_strokeorder, null, false);
+
+        mDrawerLayout.addView(contentView, 0);
+
+        if (savedInstanceState == null) {
+
+            Bundle extras = getIntent().getExtras();
+            strokeSvg = extras.getString("SVG");
+        }
+
+        setImageSize();
+        showSvg();
+    }
+
+    private void setImageSize() {
+        final FrameLayout mFrame = (FrameLayout) findViewById(R.id.frame_id);
+
+        mFrame.post(new Runnable() {
+
+            @Override
+            public void run() {
+                RelativeLayout.LayoutParams mParams;
+                mParams = (RelativeLayout.LayoutParams) mFrame.getLayoutParams();
+                mParams.height = mFrame.getWidth();
+                mFrame.setLayoutParams(mParams);
+                mFrame.postInvalidate();
+            }
+        });
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        super.onSaveInstanceState(savedInstanceState);
+        // Save UI state changes to the savedInstanceState.
+        // This bundle will be passed to onCreate if the process is
+        // killed and restarted.
+        savedInstanceState.putString("strokeSvg", "");
+    }
+
+    @Override
+    public void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        strokeSvg = savedInstanceState.getString("strokeSvg");
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        StaticObjectContainer.StaticObject = strokeSvg;
+
+        overridePendingTransition(0, 0);
+    }
+
+    @Override
+    public void onResume() {
+
+        if (StaticObjectContainer.StaticObject != null && StaticObjectContainer.StaticObject instanceof String) {
+            strokeSvg = (String) StaticObjectContainer.StaticObject;
+            StaticObjectContainer.StaticObject = null;
+        }
+
+        super.onResume();
+        overridePendingTransition(0, 0);
+
+        showSvg();
+    }
+
+    private int getLinesCount() {
+
+        return strokeSvg.split("path id", -1).length - 1;
+    }
+
+    private ArrayList<String> generateSvgs() {
+
+        ArrayList<String> svgParts = new ArrayList<String>();
+
+        int pathCount = getLinesCount();
+        String[] svgLines = strokeSvg.split("\n");
+
+        for (int i = 1; i <= pathCount; i++) {
+
+            String svgPart = "";
+            int parts = 0;
+            int textParts = 0;
+
+            for (int j = 0; j < svgLines.length; j++) {
+
+                if (!svgLines[j].contains("path id") && !svgLines[j].contains("text")) {
+                    svgPart += svgLines[j];
+                    svgPart += "\n";
+                } else if (svgLines[j].contains("path id")) {
+                    parts++;
+                    if (parts <= i) {
+                        svgPart += svgLines[j];
+                        svgPart += "\n";
+                    }
+                } else {
+                    textParts++;
+                    if (textParts <= i) {
+                        svgPart += svgLines[j];
+                        svgPart += "\n";
+                    }
+                }
+            }
+
+            svgParts.add(svgPart);
+        }
+
+        return svgParts;
+    }
+
+
+    private void showSvg() {
+
+        ArrayList<String> svgParts = generateSvgs();
+
+        int partsCount = svgParts.size();
+
+        ImageView imageView = (ImageView) findViewById(R.id.img1);
+        imageView.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
+
+        AnimationDrawable animationDrawable =
+                new AnimationDrawable();
+
+        SVGBuilder builder = new SVGF
+
+        try {
+
+            for (int i = 0; i < partsCount; i++) {
+
+                com.larvalabs.svgandroid.SVG svg = new SVGBuilder().readFromString(svgParts.get(i)).build();
+               // SVG svg = SVG.getFromString(svgParts.get(i));
+              //  SVG svg = SVG.getFromResource(getResources(), R.drawable.sample_svg);
+
+                Picture picture = svg.getPicture();
+
+                svg.
+                animationDrawable.addFrame(new PictureDrawable(picture), 500);
+            }
+
+
+        } catch (com.larvalabs.svgandroid.SVGParseException ex)
+        {
+
+        }
+
+
+        imageView.setImageDrawable(animationDrawable);
+        animationDrawable.start();
+
+
+    }
+
+}
